@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #03143E;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main tags styles  */
+/* inputs */
+input {
+    height: 40px;
+    padding: 5%;
+    margin: 1%;
+    border: .1px solid #ccc;
+}
+
+/* buttons */
+button {
+    height: 40px;
+    border: none;
+    padding: 5%;
+    border-radius: 10px;
+    margin: 1%;
+}
+button:hover {
+    border: 1px solid black;
+
+}
+
+.welcome-main{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2A2B2F;
+}
+
+.welcome-main div{
+    line-height: 40px;
+}
+
+.welcome-main div > button {
+    height: 40px;
+    margin: 1%;
+}
+.welcome-main div{
+    width: 200px;
+    
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: yellow; */
+}
+.welcome-div-logo{
+    border-radius: 50%;
+}
+.welcome-slide img{
+    width: 100%;
+    height: 600px;
+}
+
+.welcome-main div button{
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 20px;
+}
+.welcome-main div button:first-child{
+    background-color: #F65204; 
+}
+.welcome-main div button:nth-child(2){
+    background-color: #33497C; 
+}
+
+/* Admin Login Form */
+.adm-main {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-image: url(../../../public/img/aviator-admin-bg-picture.jpg);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.adm-login-form-fs{
+    width: 250px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    background-color: #fff;
+}
+.adm-login-form-fs h3{
+    color: red;
+    margin-bottom: 5px;
+}
+.adm-login-form-fs h5{
+    color: #227E25;
+    margin-bottom: 5px;
+}
+
+.adm-login-form-fs div{
+    margin: 10px;
+}
+
+.adm-login-form-fs div > input:focus {
+    border: .1px solid #ccc;
+    outline: .1px solid #c9c6c4;
+}
+
+.adm-login-form-fs legend {
+    margin: 1%;
+}
+.adm-login-form-form {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    width: 300px;
+    height: 300px;
+
+}
+.adm-login-form-btn-sign-in{
+    background-color: #1DCFB5;
+    width: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+
+    /* margin-top: 15px; */
+}
+
