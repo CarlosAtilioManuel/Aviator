@@ -25,10 +25,15 @@ button {
     padding: 5%;
     border-radius: 10px;
     margin: 1%;
+    border: none;
 }
 button:hover {
     border: 1px solid black;
 
+}
+
+a {
+    margin: 1%;
 }
 
 /* Welcome section */
@@ -133,8 +138,24 @@ button:hover {
     color: #000;
     transition: .3s ease;
     cursor: pointer;
+    text-transform: uppercase;
 }
-
+.welcome-social-midia-zap{
+    background-color: #23D563;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 85%;
+    left: 90%;
+    cursor: pointer;
+}
+.welcome-social-midia-zap * {
+    color: white;
+}
 
 
 
@@ -207,3 +228,87 @@ button:hover {
     /* margin-top: 15px; */
 }
 
+/* welcome-account-popup */
+.welcome-account-popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+
+    /* width: 300px; */
+    /* height: 250px; */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 15px;
+}
+.welcome-account-popup div{
+    margin: 1%;
+}
+.welcome-site-entrance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome-site-entrance i {
+    color: #ccc;
+    /* fill: #03143E; */
+    /* border: 1px solid #1DCFB5; */
+    /* border-radius: 100%; */
+}
+.welcome-site-entrance span{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+.welcome-site-entrance-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5% 0;
+}
+.welcome-site-entrance-input i{
+    /* margin: -1%; */
+    padding: 5px;
+}
+.welcome-site-entrance-input input {
+    height: 20px;
+    border: none;
+    outline: none;
+    padding: 4px !important;
+    margin: auto !important;
+}
+
+.w-adm-pp-remember-me{
+    display: flex;
+    align-items: center;
+}
+.field-tobe-full{
+    text-align: start;
+}
+
+
+
+/* Special customizations for the elemenents */
+.hide{
+    display: none;
+}
+.hidden{
+    display: none;
+}
+.invisible{
+    color: transparent;
+    /* color: yellow; */
+    /* background-color: #227E25; */
+    background-color: transparent;
+    border-radius: 100%;
+}
