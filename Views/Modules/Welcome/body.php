@@ -1,11 +1,7 @@
 <?php
     include_once 'head.php';
-    
-    //$db_connection = require_once("../../../Config/Connect.php");
 
-    echo("Troublemaker is powerfull");
-
-    //var_dump();
+    //var_dump($db_connection);
 ?>
 
 <main>
@@ -14,9 +10,9 @@
             <img src="../../../public/img/aviator_game_logo.jpg" alt="aviator game logo">
         </div>
 
-        <div>
+        <div class="w-m-access-button">
             <button>Register</button>
-            <button>Login</button>
+            <button class="w-adm-btn-login">Login</button>
         </div>
     </menu>
 
@@ -59,7 +55,7 @@
 
     </section>
 
-    <section class="welcome-account-popup">
+    <section class="welcome-account-popup hide">
         <div>
             <div class="welcome-site-entrance">
                 <i class="fa fa-2x fa-circle-user"></i>
@@ -90,9 +86,11 @@
                 <input type="checkbox" name="welcome-rember-me">
                 <span>Remember me</span>
             </div>
-            <div>
-                <button>Login</button>
+
+            <div class~="w-adm-pp-btn-login w-adm-pp-btn">
+                <button id="w-adm-pp-btn-login">Login</button>
             </div>
+
             <div>
                 <a href="#">Forgot your password</a>
             </div>
@@ -103,7 +101,7 @@
                 <p>Not registed yet?</p>
             </div>
 
-            <div>
+            <div  class="w-adm-pp-btn">
                 <button>Register</button>
             </div>
         </div>

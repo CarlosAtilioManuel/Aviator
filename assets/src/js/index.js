@@ -3,6 +3,11 @@ console.log("Troublemaker was here and Akatsuki too");
 const btnTalkOnWhatsapp = document.querySelector("#btn-welcome-zap-talking");
 const btnTogglePassword = document.getElementById('welcome-btn-toggle-password');
 const welcomePasswordField = document.getElementById('welcome-password-input');
+const loginButtons = [...document.querySelectorAll('.w-adm-btn-login')];
+const loginPanel = document.querySelector('.welcome-account-popup');
+
+console.log(loginButtons);
+
 
 document.addEventListener('scroll', (evt) =>{
     evt.preventDefault();
@@ -32,3 +37,9 @@ btnTogglePassword.onclick = (evt) => {
 
   // console.log(evt.target.className.includes('fa-eye-slash'));
 }
+
+loginButtons.forEach((btn, i) => {
+  console.log(btn, i +1);
+  
+  btn.onclick = () =>  loginPanel.classList.toggle('hide');
+})

@@ -22,6 +22,7 @@ input {
 button {
     height: 40px;
     border: none;
+    outline: none;
     padding: 5%;
     border-radius: 10px;
     margin: 1%;
@@ -29,7 +30,6 @@ button {
 }
 button:hover {
     border: 1px solid black;
-
 }
 
 a {
@@ -294,6 +294,23 @@ a {
 }
 .field-tobe-full{
     text-align: start;
+}
+.w-adm-pp-btn > button,
+.w-adm-pp-btn > a{
+    padding: 15px;
+    line-height: normal; 
+    background-color: #F65204 !important;
+    color: #000 !important;
+}
+.w-adm-pp-btn > button:hover,
+.w-adm-pp-btn > a:hover{
+    border: none;
+}
+
+#w-adm-pp-btn-login{
+    /* width: 2rem; */
+    background-color: #f09e78;
+    color: #000;
 }
 
 
