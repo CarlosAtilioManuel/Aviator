@@ -1,8 +1,12 @@
 <?php
 
-include './Controllers/MainController.php';
+require_once("./Config/Connect.php");
+
+include_once './Controllers/MainController.php';
 
 $url = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
+
+var_dump($db_connection);
 
 switch($url) {
     case "/":

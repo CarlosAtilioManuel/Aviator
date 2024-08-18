@@ -1,5 +1,11 @@
 <?php
-    include 'head.php';
+    include_once 'head.php';
+    
+    //$db_connection = require_once("../../../Config/Connect.php");
+
+    echo("Troublemaker is powerfull");
+
+    //var_dump();
 ?>
 
 <main>
